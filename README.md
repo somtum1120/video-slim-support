@@ -1,20 +1,39 @@
-# Video Slim Support
+# 動画スリム サポート
 
-Official Japanese support and privacy site for the iPhone app Video Slim.
+「動画スリム」は、iPhone内の大きな動画を見つけ、端末上で圧縮版を作成するアプリです。動画を開発者のサーバーへ送信しません。
 
-VM101 `/home/codex/homespace/projects/video-slim-support` is the source of truth. The Mac checkout is used to build and deploy through Sites.
+このリポジトリは公式日本語サポート／プライバシーサイトの正本です。VM101 `/home/codex/homespace/projects/video-slim-support`で管理し、MacはSitesのビルド・配布にだけ使用します。
 
-## Pages
+## ページ
 
-- `/`: support and frequently asked questions
-- `/privacy`: public privacy policy used by App Store Connect
+- `/`: サポートとよくある質問
+- `/privacy`: App Store Connectで使用する公開プライバシーポリシー
+- [`PRIVACY.md`](PRIVACY.md): GitHubから参照できる同内容の要約
 
-The site does not collect user data and has no database, authentication, analytics, or runtime secrets.
+## よくある質問
 
-## Development
+### 元の動画は自動で削除されますか？
+
+いいえ。圧縮版の保存と再生確認が完了した後も、元動画は残ります。削除を選んだ場合だけ、iOSの確認画面を経て削除します。
+
+### iCloud写真の動画も圧縮できますか？
+
+はい。取得が必要なときは、操作画面で通信と進捗を表示します。通信環境とiPhoneの空き容量をご確認ください。
+
+### 購入を復元するには？
+
+アプリの「設定」から「購入を復元」を選んでください。同じApple Accountで購入済みの非消費型アイテムが対象です。
+
+## お問い合わせ
+
+[新しいサポート依頼を作成](https://github.com/somtum1120/video-slim-support/issues/new)してください。個人情報や動画そのものは添付しないでください。
+
+## 開発
 
 ```sh
 npm install
 npm run dev
 npm test
 ```
+
+公開サイトは利用者データを収集せず、認証、分析、広告、runtime secretを使用しません。
