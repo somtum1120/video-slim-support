@@ -8,7 +8,10 @@
 
 - `/`: サポートとよくある質問
 - `/privacy`: App Store Connectで使用する公開プライバシーポリシー
+- `/en`: English support and FAQ
+- `/en/privacy`: English privacy policy
 - [`PRIVACY.md`](PRIVACY.md): GitHubから参照できる同内容の要約
+- [`PRIVACY_EN.md`](PRIVACY_EN.md): English privacy policy summary
 
 ## よくある質問
 
@@ -37,3 +40,28 @@ npm test
 ```
 
 公開サイトは利用者データを収集せず、認証、分析、広告、runtime secretを使用しません。
+
+## English support
+
+Video Slim finds large videos on your iPhone and creates smaller copies without
+sending videos to a developer-operated server. Single-video compression is free
+and unlimited. Video Slim Pro is a one-time purchase that unlocks batch
+compression for 2–20 selected videos; there is no subscription.
+
+### Are originals deleted automatically?
+
+No. The original remains after a compressed copy is saved and verified. It is
+deleted only if you explicitly choose deletion and confirm it in iOS.
+
+### Can Video Slim compress videos stored in iCloud Photos?
+
+Yes. When a video must be downloaded, the app shows network activity and
+progress. A network connection and sufficient free space are required.
+
+### How do I restore Pro?
+
+Open Settings in Video Slim and choose Restore Purchase while signed in with
+the Apple Account that made the original non-consumable purchase.
+
+For help, [open a support request](https://github.com/somtum1120/video-slim-support/issues/new).
+Do not attach personal information or the video itself.

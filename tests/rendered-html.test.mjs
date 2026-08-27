@@ -43,3 +43,25 @@ test("server-renders the privacy policy with route-specific metadata", async () 
   assert.match(html, /UserDefaults/);
   assert.doesNotMatch(html, /og\.png/);
 });
+
+test("server-renders the English support page with localized metadata", async () => {
+  const response = await render("/en");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /<title>Video Slim Support<\/title>/i);
+  assert.match(html, /Are originals deleted automatically\?/);
+  assert.match(html, /Open a Support Request/);
+  assert.match(html, /href="\/en\/privacy"/);
+  assert.doesNotMatch(html, /codex-preview|SkeletonPreview/);
+});
+
+test("server-renders the English privacy policy with route-specific metadata", async () => {
+  const response = await render("/en/privacy");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /<title>Privacy Policy \| Video Slim<\/title>/i);
+  assert.match(html, /Originals are never deleted automatically/);
+  assert.match(html, /contains no advertising, tracking, or analytics SDKs/);
+  assert.match(html, /UserDefaults/);
+  assert.doesNotMatch(html, /og\.png/);
+});

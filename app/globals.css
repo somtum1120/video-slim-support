@@ -55,7 +55,7 @@ p { line-height: 1.8; }
 .contact p { color: #c8d2ee; max-width: 700px; }
 footer { display: flex; justify-content: space-between; gap: 20px; padding: 30px max(6vw, 24px); color: var(--muted); border-top: 1px solid var(--line); }
 .policy-shell { min-height: 100vh; background: var(--surface); }
-.policy-nav { max-width: 880px; margin: 0 auto; padding: 32px 24px 0; }
+.policy-nav { max-width: 880px; margin: 0 auto; padding: 32px 24px 0; display: flex; justify-content: space-between; gap: 24px; }
 .policy-nav a { font-weight: 700; text-decoration: none; color: var(--blue); }
 .policy { max-width: 880px; margin: 0 auto; padding: 64px 24px 110px; }
 .policy h1 { color: var(--ink); font-size: clamp(44px, 8vw, 76px); }

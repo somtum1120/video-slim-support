@@ -11,6 +11,7 @@ export default function Home() {
           <div className="actions">
             <a className="primary" href="#support">サポートを見る</a>
             <a className="secondary" href="/privacy">プライバシー</a>
+            <a className="secondary" href="/en" hrefLang="en">English</a>
           </div>
         </div>
         <img className="app-icon" src="/app-icon.png" alt="動画スリムのアプリアイコン" />
@@ -46,6 +47,7 @@ export default function Home() {
       <footer>
         <span>© 2026 Video Slim</span>
         <a href="/privacy">プライバシーポリシー</a>
+        <a href="/en" hrefLang="en">English</a>
       </footer>
     </main>
   );

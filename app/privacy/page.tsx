@@ -23,6 +23,7 @@ export default function PrivacyPage() {
     <main className="policy-shell">
       <nav className="policy-nav">
         <a href="/">← サポートへ戻る</a>
+        <a href="/en/privacy" hrefLang="en">English</a>
       </nav>
       <article className="policy">
         <p className="section-label">PRIVACY POLICY</p>
