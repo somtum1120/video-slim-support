@@ -23,6 +23,7 @@ export default function PrivacyPage() {
     <main className="policy-shell">
       <nav className="policy-nav">
         <a href="/">← サポートへ戻る</a>
+        <a href="/en/privacy" hrefLang="en">English</a>
       </nav>
       <article className="policy">
         <p className="section-label">PRIVACY POLICY</p>
@@ -49,8 +50,9 @@ export default function PrivacyPage() {
 
         <h2>3. 端末内に保存する情報</h2>
         <p>
-          無料圧縮を利用済みかどうかだけを、iPhone内のUserDefaultsへ保存します。
-          この情報を開発者へ送信せず、アプリを削除すると通常は削除されます。
+          圧縮成功回数、削減できた容量の累計、旧バージョンからの移行フラグ、
+          最後にレビュー表示を要求したアプリバージョンをiPhone内のUserDefaultsへ保存します。
+          これらを開発者へ送信せず、アプリを削除すると通常は削除されます。
         </p>
 
         <h2>4. アプリ内購入</h2>
