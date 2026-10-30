@@ -65,3 +65,14 @@ test("server-renders the English privacy policy with route-specific metadata", a
   assert.match(html, /UserDefaults/);
   assert.doesNotMatch(html, /og\.png/);
 });
+
+test("server-renders the Traditional Chinese privacy policy", async () => {
+  const response = await render("/zh-Hant/privacy");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /<title>隱私權政策 \| Video Slim<\/title>/);
+  assert.match(html, /lang="zh-Hant"/);
+  assert.match(html, /不會自動刪除原始影片/);
+  assert.match(html, /最近 100 筆紀錄/);
+  assert.doesNotMatch(html, /og\.png/);
+});
