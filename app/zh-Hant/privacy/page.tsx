@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     type: "article",
     locale: "zh_TW",
   },
+  twitter: {
+    card: "summary",
+    title: "隱私權政策 | Video Slim",
+    description: "了解 Video Slim 如何處理影片、照片圖庫權限和裝置內資料。",
+    images: [],
+  },
 };
 
 export default function TraditionalChinesePrivacyPage() {
